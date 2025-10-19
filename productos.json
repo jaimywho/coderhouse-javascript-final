@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "nombre": "Polera gris",
+    "precio": 5000,
+    "imagen": "https://anomalo.cl/cdn/shop/files/POLERA-GRIS_b45b05b0-6b89-4156-80c5-31228637cd36.png?v=1730218437&width=300",
+    "tallas": [
+      { "talla": "S", "disponible": true },
+      { "talla": "M", "disponible": true },
+      { "talla": "L", "disponible": false }
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Polera blanca",
+    "precio": 5000,
+    "imagen": "https://anomalo.cl/cdn/shop/files/POLERA-BLANCA_3b697fe3-b0ea-411c-aef0-5eb7741ed7d2.png?v=1730218437&width=300",
+    "tallas": [
+      { "talla": "S", "disponible": true },
+      { "talla": "M", "disponible": false },
+      { "talla": "L", "disponible": false }
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Polera negra",
+    "precio": 4000,
+    "imagen": "https://anomalo.cl/cdn/shop/files/POLERA-NEGRA_3a9f1d45-7955-40b1-9922-c7b9a87fc56e.png?v=1730218437&width=300",
+    "tallas": [
+      { "talla": "S", "disponible": true },
+      { "talla": "M", "disponible": true },
+      { "talla": "L", "disponible": true }
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Polera azul",
+    "precio": 2000,
+    "imagen": "https://anomalo.cl/cdn/shop/files/POLERA-AZUL_d65a5ab4-d740-499c-92cc-bfe93d505b45.png?v=1730218437&width=300",
+    "tallas": [
+      { "talla": "S", "disponible": true },
+      { "talla": "M", "disponible": true },
+      { "talla": "L", "disponible": true }
+    ]
+  }
+]
