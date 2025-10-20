@@ -3,6 +3,7 @@ let productos = JSON.parse(localStorage.getItem("productos")) || [];
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 const contenedor = document.getElementById("carrito-container");
+const headerCarrito = document.getElementById("header-carrito");
 
 function guardarCarrito() {
   localStorage.setItem("carrito", JSON.stringify(carrito));
@@ -48,6 +49,29 @@ function mostrarCarrito() {
   totalDiv.classList.add("carrito-total");
   totalDiv.innerHTML = `<strong>Total: $${total}</strong>`;
   contenedor.appendChild(totalDiv);
+
+  // ✅ Botón "Comprar" centrado
+  const comprarBtn = document.createElement("button");
+  comprarBtn.textContent = "Comprar";
+  comprarBtn.classList.add("btn-comprar");
+  contenedor.appendChild(comprarBtn);
+
+  // Acción del botón "Comprar"
+  comprarBtn.addEventListener("click", () => {
+    carrito = [];
+    guardarCarrito();
+
+    // ✅ Ocultar título "Tu carrito"
+    if (headerCarrito) {
+      headerCarrito.style.display = "none";
+    }
+
+    contenedor.innerHTML = `
+      <div class="mensaje-compra">
+        <h2>Gracias por tu compra! </h2>
+      </div>
+    `;
+  });
 
   const deleteButtons = contenedor.querySelectorAll(".btn-eliminar");
   deleteButtons.forEach((btn) => {

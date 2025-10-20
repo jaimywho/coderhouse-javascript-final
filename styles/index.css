@@ -1,3 +1,6 @@
+h1 {
+  text-align: center;
+}
 #card.innerHTML {
   align-content: center;
   display: flex;
@@ -123,4 +126,36 @@
 
 .carrito-total {
   font-size: 25px;
+}
+
+.btn-comprar {
+  padding: 15px 40px;
+  font-size: 22px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+}
+
+.btn-comprar:hover {
+  background-color: #218838;
+}
+
+.mensaje-compra {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.mensaje-compra h2 {
+  color: #116b26;
+  font-size: 1.5em;
+}
+
+.mensaje-compra p {
+  color: #555;
+  margin-top: 10px;
 }
